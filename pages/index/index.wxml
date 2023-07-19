@@ -36,4 +36,41 @@
       <text>直播</text>
     </view>
   </view>
+
+  <!-- 推荐歌曲 -->
+  <view class="recommend">
+    <view class="header">
+      <text class="title">推荐歌曲</text>
+      <view>
+        <text>为你精心推荐</text>
+        <text class="more">查看更多</text>
+      </view>
+    </view>
+    <scroll-view class="recommendContainer" enable-flex="true"	scroll-x="true">
+      <view class="recommendItem">
+        <image src="/static/images/nvsheng.jpg"></image>
+        <text>华语速报新歌sfjakfasdfJFK士大夫撒旦发卡号是对方上的飞机卡里的</text>
+      </view>
+      <view class="recommendItem">
+        <image src="/static/images/nvsheng.jpg"></image>
+        <text>华语速报新歌sfjakfasdfJFK士大夫撒旦发卡号是对方上的飞机卡里的</text>
+      </view>
+      <view class="recommendItem">
+        <image src="/static/images/nvsheng.jpg"></image>
+        <text>华语速报新歌sfjakfasdfJFK士大夫撒旦发卡号是对方上的飞机卡里的</text>
+      </view>
+      <view class="recommendItem">
+        <image src="/static/images/nvsheng.jpg"></image>
+        <text>华语速报新歌sfjakfasdfJFK士大夫撒旦发卡号是对方上的飞机卡里的</text>
+      </view>
+      <view class="recommendItem">
+        <image src="/static/images/nvsheng.jpg"></image>
+        <text>华语速报新歌sfjakfasdfJFK士大夫撒旦发卡号是对方上的飞机卡里的</text>
+      </view>
+      <view class="recommendItem">
+        <image src="/static/images/nvsheng.jpg"></image>
+        <text>华语速报新歌sfjakfasdfJFK士大夫撒旦发卡号是对方上的飞机卡里的</text>
+      </view>
+    </scroll-view>
+  </view>
 </view>

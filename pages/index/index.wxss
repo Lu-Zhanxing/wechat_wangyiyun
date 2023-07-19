@@ -33,3 +33,50 @@
 .navItem text{
   font-size: 24rpxx;
 }
+
+/* 推荐歌曲 */
+.recommend{
+  padding: 0 10rpx;
+}
+.recommend .header .title{
+  display: block;
+  line-height: 80rpx;
+  font-size: 36rpx;
+  color: #666;
+}
+.recommend .header .more{
+  float: right;
+  border: 1px solid #666;
+  border-radius: 30rpx;
+  padding: 10rpx 20rpx;
+  font-size: 24rpx;
+}
+
+.recommend .recommendContainer{
+  display: flex;
+  padding-top: 10rpx;
+}
+.recommend .recommendContainer .recommendItem{
+  width: 200rpx;
+  margin-right: 10rpx;
+}
+.recommend .recommendContainer .recommendItem image{
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 10rpx;
+}
+.recommend .recommendContainer .recommendItem text{
+  font-size: 26rpx;
+  /* 设置不换行，单行文本超出隐藏 */
+  /* white-space: nowrap;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis; */
+
+  /* 多行文本超出隐藏 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
