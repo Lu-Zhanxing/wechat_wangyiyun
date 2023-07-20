@@ -9,14 +9,23 @@ Page({
    */
   data: {
     coverTransform: 'translateY(0)',
-    coveTransition: ''
+    coveTransition: '',
+    userInfo:{}
   },
 
+  toLogin(){
+    wx.navigateTo({
+      url: '/pages/login/login',
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    let userInfo = JSON.parse(wx.getStorageSync('userInfo'))
+    this.setData({
+      userInfo
+    })
   },
 
   handleTouchStart(e){
