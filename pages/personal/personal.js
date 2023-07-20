@@ -1,11 +1,15 @@
 // pages/personal/personal.js
+let startY = 0;
+let moveY = 0;
+let moveDistance = 0;
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    coverTransform: 'translateY(0)',
+    coveTransition: ''
   },
 
   /**
@@ -13,6 +17,32 @@ Page({
    */
   onLoad: function (options) {
 
+  },
+
+  handleTouchStart(e){
+    this.setData({
+      coveTransition: ""
+    })
+    startY = e.touches[0].pageY
+  },
+  handleTouchMove(e){
+    moveY = e.touches[0].pageY
+    moveDistance = moveY - startY
+    if (moveDistance < 0) {
+      return
+    }
+    if(moveDistance > 80){
+      moveDistance = 80
+    }
+    this.setData({
+      coverTransform: `translateY(${moveDistance}rpx)`
+    })
+  },
+  handleTouchEnd(){
+    this.setData({
+      coverTransform: "translateY(0)",
+      coveTransition: "transform 1s linear"
+    })
   },
 
   /**
